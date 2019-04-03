@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: dev-server
-        image: 702401326258.dkr.ecr.us-east-1.amazonaws.com/devopsproj4:latest
+        image: 675208127568.dkr.ecr.us-east-2.amazonaws.com/devopsrepo:latest
         ports:
         - name: http-port
           containerPort: 8080
