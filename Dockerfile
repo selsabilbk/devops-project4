@@ -3,7 +3,7 @@ FROM tomcat:8.0
 COPY tomcat-users.xml /usr/local/tomcat/conf/
 
 #RUN mkdir -p /usr/local/tomcat/webapps/dev
-COPY target/*.war  /usr/local/tomcat/webapps/dev.war
+COPY target/*.jar  /usr/local/tomcat/webapps/dev.jar
 
 CMD chmod +x /usr/local/tomcat/bin/
 
