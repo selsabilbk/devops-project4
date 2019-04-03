@@ -1,2 +1,2 @@
 # devops-project4
-git,jenkins,maven,springboot,docker,ecr,kubernetes
+git,jenkins,maven,springboot,docker,ecr,kubernetes,Spinnaker
