@@ -1,14 +1,18 @@
-apiVersion: v1
-kind: Service
+apiVersion: extensions/v1beta1
+kind: Deployment
 metadata:
-  name: dev-service
+  name: dev-server
 spec:
-  type: {{ .Values.service.type }}
-  ports:
-    - port: {{ .Values.service.port }}
-      name: "http"
-      nodePort: 30000
-      targetPort: 8080
-      protocol: TCP
-  selector:
-    app: dev-server
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dev-server
+    spec:
+      containers:
+      - name: dev-server
+        image: 702401326258.dkr.ecr.us-east-1.amazonaws.com/devopsproj4:latest
+        ports:
+        - name: http-port
+          containerPort: 8080
+          protocol: TCP
