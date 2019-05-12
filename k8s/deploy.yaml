@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: dev-server
-        image: 638687470950.dkr.ecr.us-east-1.amazonaws.com/devops:latest
+        image: nexus-docker.minikube/i.b.vermeg:springapp
         ports:
         - name: http-port
           containerPort: 8080
