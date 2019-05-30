@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: web-ingress
+  name: serv-ingress
   namespace: jenkins
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
