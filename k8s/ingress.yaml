@@ -15,4 +15,4 @@ spec:
       - path: /myapp
         backend:
           serviceName: dev-service
-          servicePort: 3000
+          servicePort: 8080
