@@ -13,5 +13,5 @@ spec:
       paths:
       - path: /myapp
         backend:
-          serviceName: dev-service
+          serviceName: dev-server
           servicePort: 8080
