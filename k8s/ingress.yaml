@@ -7,10 +7,6 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: "/myapp"
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
     nginx.ingress.kubernetes.io/proxy-body-size: "0"
-     nginx.ingress.kubernetes.io/configuration-snippet: | 
-       rewrite ^(/myapp)$ http://$best_http_host$1/ permanent;
-
-
 spec:
   rules:
   - http:
