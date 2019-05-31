@@ -4,7 +4,7 @@ metadata:
   name: serv-ingress
   namespace: jenkins
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: "/myapp"
+    nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
     nginx.ingress.kubernetes.io/proxy-body-size: "0"
 spec:
